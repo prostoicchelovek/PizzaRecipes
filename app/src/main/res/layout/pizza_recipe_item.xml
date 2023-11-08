@@ -25,7 +25,7 @@
             android:layout_toEndOf="@+id/pizzaImageView"/>
 
         <TextView
-            android:id="@+id/descriptionImageView"
+            android:id="@+id/descriptionTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/titleTextView"
