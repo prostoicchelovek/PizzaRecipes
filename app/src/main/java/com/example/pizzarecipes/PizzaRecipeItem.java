@@ -3,9 +3,11 @@ package com.example.pizzarecipes;
 public class PizzaRecipeItem {
     private int imageResource;
     private String title;
-    private String description;
 
-    public PizzaRecipeItem(int imageResource, String title, String description) {
+    private String description;
+    private String recipe;
+
+    public PizzaRecipeItem(int imageResource, String title, String description, String recipe) {
         this.imageResource = imageResource;
         this.title = title;
         this.description = description;
@@ -22,4 +24,6 @@ public class PizzaRecipeItem {
     public String getDescription() {
         return description;
     }
+
+    public String getRecipe(){return recipe;}
 }
