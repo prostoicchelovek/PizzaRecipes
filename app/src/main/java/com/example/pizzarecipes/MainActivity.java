@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         pizzaRecipeItems.add(new PizzaRecipeItem(R.drawable.pizza10, Utils.TITLE10,Utils.DESCRIPTION10,Utils.RECIPE10));
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
-        adapter=new PizzaRecipeAdapter(pizzaRecipeItems);
+        adapter=new PizzaRecipeAdapter(pizzaRecipeItems, this);
         layoutManager=new LinearLayoutManager(this);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(layoutManager);
